@@ -288,7 +288,6 @@ config MACH_MT6768
 	select MTK_BASE_POWER
 	select MTK_GIC_V3_EXT
 	select MTK_SYSIRQ
-	select MTK_DEBUG_LATCH
 	select MTK_PLAT_SRAM_FLAG
 	select MTK_EMI_LEGACY
 	select MTK_DRAMC
@@ -300,7 +299,6 @@ config MACH_MT6768
 	select MTK_LASTBUS_INTERFACE
 	select MTK_DFD_INTERNAL_DUMP
 	select MTK_DBGTOP
-	select MTK_DEBUG_LATCH
 	select MTK_ES_REG
 	select MTK_CQDMA
 	select MTK_GIC_TARGET_ALL
