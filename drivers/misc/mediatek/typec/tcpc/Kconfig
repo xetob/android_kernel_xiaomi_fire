@@ -85,7 +85,7 @@ config TCPC_HUSB320
 config PD_DBG_INFO
 	bool "TCPC power delivery debug information"
 	depends on TCPC_CLASS
-	default y
+	default n
 	help
 	  Say Y to enable
 	  power delivery
