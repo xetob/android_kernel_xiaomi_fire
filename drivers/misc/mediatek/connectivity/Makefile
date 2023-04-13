@@ -63,6 +63,9 @@ endif
     export WIFI_ECO_VER=1
     export MTK_WLAN_SERVICE=yes
 
+    # Remove debugging
+    export TARGET_BUILD_VARIANT=user
+
     ifeq ($(CONFIG_WLAN_DRV_BUILD_IN),y)
         # Do build-in for xxx.c checking
         subdir-ccflags-y += -D MTK_WCN_REMOVE_KERNEL_MODULE
