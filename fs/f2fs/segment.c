@@ -3262,12 +3262,12 @@ out_err:
 
 	up_write(&sit_i->sentry_lock);
 	mutex_unlock(&curseg->curseg_mutex);
-	up_read(&SM_I(sbi)->curseg_lock);
+	f2fs_up_read(&SM_I(sbi)->curseg_lock);
 	if (IS_DATASEG(type))
-		up_write(&sbi->node_write);
+		f2fs_up_write(&sbi->node_write);
 
 	if (put_pin_sem)
-		up_read(&sbi->pin_sem);
+		f2fs_up_read(&sbi->pin_sem);
 	return -ENOSPC;
 }
 
