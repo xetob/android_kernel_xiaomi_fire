@@ -111,7 +111,6 @@ static inline bool z_erofs_pagevec_enqueue(struct z_erofs_pagevec_ctor *ctor,
 	if (!ctor->next && type)
 		if (ctor->index + 1 == ctor->nr)
 			return false;
-	}
 
 	if (ctor->index >= ctor->nr)
 		z_erofs_pagevec_ctor_pagedown(ctor, false);
